@@ -1,0 +1,64 @@
+.map {
+  width: 700px;
+  height: 545px;
+  margin: auto;
+}
+
+.switch-wrap {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+}
+
+.switch-wrap input {
+  display: none;
+}
+
+.switch-tab {
+  height: 40px;
+  display: block;
+  border-radius: 6px;
+  background-color: #e3e6eb;
+  padding: 2px;
+}
+
+.switch-tab::before {
+  content: "现有确诊";
+  font-weight: bold;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 1;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  transition: all .2s ease
+}
+
+#tab-toggle:checked + .switch-tab::before {
+  left: 50%;
+  content: "累计确诊";
+  transition: all .2s ease;
+}
+
+#tab-toggle:checked + .switch-tab::after {
+  left: -50%;
+  content: "现有确诊";
+}
+
+.switch-tab::after {
+  content: "累计确诊";
+  font-weight: bold;
+  z-index: 0;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}

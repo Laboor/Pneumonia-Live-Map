@@ -1,0 +1,27 @@
+.statistics {
+  height: 220px;
+}
+
+.statistics-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0faeb5;
+  margin: 0;
+}
+
+.statistics-content {
+  height: 3em;
+  text-align: center;
+  margin: 30px;
+}
+
+.statistics-data {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.divider {
+  height: 2em;
+  border-left: 1px solid rgb(212, 212, 212);
+}

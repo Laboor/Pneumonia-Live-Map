@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>肺炎实时地图</title>
+<link href="././css/styles.css" rel="stylesheet"></head>
+
+<body>
+  <div id="app">
+    <div class="component-container">
+      <div class="statistics container">
+  <div class="row">
+    <h2 class="statistics-title col">疫情实时动态</h2>
+  </div>
+  <div class="row statistics-content">
+    <div class="col">
+      <span>现有确诊</span><br>
+      <span id="currentConfirmedCount" class="statistics-data" style="color: #ff6957;">0</span>
+    </div>
+    <div class="divider align-self-center"></div>
+    <div class="col">
+      <span>现有疑似</span><br>
+      <span id="suspectedCount" class="statistics-data" style="color: #ec9222;">0</span>
+    </div>
+    <div class="divider align-self-center"></div>
+    <div class="col">
+      <span>现有重症</span><br>
+      <span id="seriousCount" class="statistics-data" style="color: #476ca0;">0</span>
+    </div>
+  </div>
+  <div class="row statistics-content">
+    <div class="col">
+      <span>累计确诊</span><br>
+      <span id="confirmedCount" class="statistics-data" style="color: #e83132;">0</span>
+    </div>
+    <div class="divider align-self-center"></div>
+    <div class="col">
+      <span>累计治愈</span><br>
+      <span id="curedCount" class="statistics-data" style="color: #0faeb5;">0</span>
+    </div>
+    <div class="divider align-self-center"></div>
+    <div class="col">
+      <span>累计死亡</span><br>
+      <span id="deadCount" class="statistics-data" style="color: #4c5054;">0</span>
+    </div>
+  </div>
+</div>
+      <div class="switch-wrap">
+  <input id="tab-toggle" type="checkbox" />
+  <label for="tab-toggle" class="switch-tab"></label>
+</div>
+<div id="map" class="map"></div>
+    </div>
+  </div>
+<script type="text/javascript" src="././js/main.7c0575895405f72f54b8.js"></script></body>
+
+</html>
