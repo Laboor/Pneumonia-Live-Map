@@ -84,8 +84,8 @@ myChart.on('mapselectchanged', function (params) {
 });
 
 // ajax请求数据
-let mapCurrentData = []; // 当前确诊数
-let mapTotalData = [];  //累计确诊数
+let mapCurrentData = [{ name: '南海诸岛', value: 0 }]; // 当前确诊数
+let mapTotalData = [{ name: '南海诸岛', value: 0 }];  //累计确诊数
 $.get(apiConfig.cityApi, { key: apiConfig.cityApiKey }, function (data) {
   if (data.code != 200) {
     console.log('数据请求失败', data);
